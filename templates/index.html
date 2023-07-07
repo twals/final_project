@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+
+{% block main %}
+    <h2>Played Games</h2>
+    <br><br>
+        <table id="games">
+            <thead>
+                <tr>
+                    <th>Game</th>
+                    <th>Notes</th>
+                    <th>Your Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for game in games %}
+                    <tr>
+                        <td>{{ game.game_name }}</td>
+                        <td>{{ game.notes }}</td>
+                        <td>{{ game.rating }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+{% endblock %}

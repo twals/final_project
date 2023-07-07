@@ -1,0 +1,43 @@
+.navbar-brand
+{
+    font-size: xx-large;
+    color: #429ce5 !important;
+}
+
+h2
+{
+    color:#2991e6;
+}
+
+body {
+    background-color: rgba(191, 204, 233, 0.993);
+}
+
+#games {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#games td, #games th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+#games tr:nth-child(even){background-color: #9abdda;}
+#games tr:nth-child(odd){background-color: #88a1cf;}
+
+#games tr:hover {background-color: #ddd;}
+
+#games th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #000000;
+    color: white;
+  }
+
+  
+ 

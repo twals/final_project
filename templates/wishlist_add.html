@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add/Del Games
+{% endblock %}
+
+{% block main %}
+
+    <h2>Add Games to your Wishlist</h2>
+    <br><br>
+
+    <form action="/wishlist_add" method="POST">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="name" name="name" placeholder="Enter the game title to add." type="text">
+        </div>
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="platform" name="platform" placeholder="Enter the game platform." type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Add</button>
+    </form>
+
+
+{% endblock %}

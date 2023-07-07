@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add/Del Games
+{% endblock %}
+
+{% block main %}
+
+    <h2>Add Games to your Shelf</h2>
+    <br>
+    <br>
+
+    <form action="/add_games" method="POST">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="name" name="name" placeholder="Enter the game title to add." type="text">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="genre" name="genre" placeholder="Genre(s)" type="text">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="notes" name="notes" placeholder="Notes - What did you like or dislike?" type="text">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="rating" name="rating" placeholder="Rating (out of 10)" type="number" min="0" max="10">
+        </div>
+        <button class="btn btn-primary" type="submit">Add</button>
+    </form>
+
+
+{% endblock %}

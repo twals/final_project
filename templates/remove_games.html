@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Remove Games
+{% endblock %}
+
+{% block main %}
+
+    <h2>Remove a Game from your Shelf</h2>
+    <br><br>
+
+        <form action="/remove_games" method="POST">
+            <div class="mb-3">
+                <select class="form-control mx-auto w-auto" name="game">
+
+                    <option value="" disabled selected>Select a game to remove</option>
+                    {% for game in games %}
+                        <option value="{{ game.game_name }}">{{ game.game_name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <button class="btn btn-primary" type="submit">Remove</button>
+        </form>
+{% endblock %}
