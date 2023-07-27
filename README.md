@@ -19,7 +19,7 @@ This file imports and configures Flask for use with the website, as well as the 
 - Displaying and interacting with the content of the site
 - Redirecting the user as needed (e.g, to the home page after logging in)
 
-#### final.db
+#### final.db (Not included here)
 
 The database for the final project is made up of four tables - users, shelves, games and wishlist. I tried to design these so as to keep any repeated information to a minimum. 
 
